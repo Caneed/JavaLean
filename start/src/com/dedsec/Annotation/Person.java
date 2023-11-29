@@ -1,8 +1,17 @@
-package com.dedsec.Cls;
+package com.dedsec.Annotation;
 
-public class Dog {
+public class Person {
     String name;
     int age;
+
+    Person() {
+        this.name = "";
+        this.age = 0;
+    }
+
+    public void MyName(){
+
+    }
 
     public String getName() {
         return name;
@@ -18,15 +27,5 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
-        System.out.println("Woof");
-    }
-
-    public static void main(String[] args) {
-        Dog dog = new Dog("puppy", 3);
     }
 }
